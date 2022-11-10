@@ -7,20 +7,20 @@ class Ma(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RNS.gif"
+                return "images/RNS.GIF"
             else:
-                return "images/BNS.gif"
+                return "images/BNS.GIF"
         else:
             if self.is_red:
-                return "images/RN.gif"
+                return "images/RN.GIF"
             else:
-                return "images/BN.gif"
+                return "images/BN.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RNS.gif"
+            return "images/RNS.GIF"
         else:
-            return "images/BNS.gif"
+            return "images/BNS.GIF"
 
     def can_move(self, board, dx, dy):
         x, y = self.x, self.y

@@ -7,20 +7,20 @@ class Shuai(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RKS.gif"
+                return "images/RKS.GIF"
             else:
-                return "images/BKS.gif"
+                return "images/BKS.GIF"
         else:
             if self.is_red:
-                return "images/RK.gif"
+                return "images/RK.GIF"
             else:
-                return "images/BK.gif"
+                return "images/BK.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RKS.gif"
+            return "images/RKS.GIF"
         else:
-            return "images/BKS.gif"
+            return "images/BKS.GIF"
 
     def can_move(self, board, dx, dy):
         # print 'king'

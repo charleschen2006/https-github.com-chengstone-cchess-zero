@@ -10,7 +10,7 @@ class ChessView:
     root.resizable(0, 0)
     can = tkinter.Canvas(root, width=373, height=410)
     can.pack(expand=tkinter.YES, fill=tkinter.BOTH)
-    img = tkinter.PhotoImage(file="images/WHITE.gif")
+    img = tkinter.PhotoImage(file="images/WHITE.GIF")
     can.create_image(0, 0, image=img, anchor=tkinter.NW)
     piece_images = dict()
     move_images = []
@@ -23,7 +23,7 @@ class ChessView:
             self.can.create_image(board_coord(x), board_coord(y), image=self.piece_images[x, y])
         if board.selected_piece:
             for (x, y) in board.selected_piece.get_move_locs(board):
-                self.move_images.append(tkinter.PhotoImage(file="images/OOS.gif"))
+                self.move_images.append(tkinter.PhotoImage(file="images/OOS.GIF"))
                 self.can.create_image(board_coord(x), board_coord(y), image=self.move_images[-1])
                 # self.can.create_text(board_coord(x), board_coord(y),text="Hello")
 
@@ -63,7 +63,7 @@ class ChessView:
             self.last_text_x = dst_x
             self.last_text_y = dst_y
         else:
-            self.move_images.append(tkinter.PhotoImage(file="images/OOS.gif"))
+            self.move_images.append(tkinter.PhotoImage(file="images/OOS.GIF"))
             self.can.create_image(board_coord(dst_x), board_coord(dst_y), image=self.move_images[-1])
             self.can.create_text(board_coord(dst_x), board_coord(dst_y),text="{:.3f}".format(percentage))
             self.last_text_x = dst_x

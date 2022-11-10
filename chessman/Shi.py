@@ -7,20 +7,20 @@ class Shi(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RAS.gif"
+                return "images/RAS.GIF"
             else:
-                return "images/BAS.gif"
+                return "images/BAS.GIF"
         else:
             if self.is_red:
-                return "images/RA.gif"
+                return "images/RA.GIF"
             else:
-                return "images/BA.gif"
+                return "images/BA.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RAS.gif"
+            return "images/RAS.GIF"
         else:
-            return "images/BAS.gif"
+            return "images/BAS.GIF"
 
     def can_move(self, board, dx, dy):
         nx, ny = self.x + dx, self.y + dy

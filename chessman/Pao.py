@@ -7,20 +7,20 @@ class Pao(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RCS.gif"
+                return "images/RCS.GIF"
             else:
-                return "images/BCS.gif"
+                return "images/BCS.GIF"
         else:
             if self.is_red:
-                return "images/RC.gif"
+                return "images/RC.GIF"
             else:
-                return "images/BC.gif"
+                return "images/BC.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RCS.gif"
+            return "images/RCS.GIF"
         else:
-            return "images/BCS.gif"
+            return "images/BCS.GIF"
 
     def can_move(self, board, dx, dy):
         if dx != 0 and dy != 0:

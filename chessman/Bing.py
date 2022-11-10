@@ -7,20 +7,20 @@ class Bing(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RPS.gif"
+                return "images/RPS.GIF"
             else:
-                return "images/BPS.gif"
+                return "images/BPS.GIF"
         else:
             if self.is_red:
-                return "images/RP.gif"
+                return "images/RP.GIF"
             else:
-                return "images/BP.gif"
+                return "images/BP.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RPS.gif"
+            return "images/RPS.GIF"
         else:
-            return "images/BPS.gif"
+            return "images/BPS.GIF"
 
     def can_move(self, board, dx, dy):
         if abs(dx) + abs(dy) != 1:

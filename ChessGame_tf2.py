@@ -160,7 +160,7 @@ class ChessGame:
         sorted_move_probs = self.cchess_engine.get_hint(self.ai_function, True, self.disp_mcts_msg)
         # print(sorted_move_probs)
         self.view.print_all_hint(sorted_move_probs)
-        # self.move_images.append(tkinter.PhotoImage(file="images/OOS.gif"))
+        # self.move_images.append(tkinter.PhotoImage(file="images/OOS.GIF"))
         # self.can.create_image(board_coord(x), board_coord(y), image=self.move_images[-1])
 
         self.view.showMsg("Red" + red_msg + " Green" + green_msg if self.current_player == "w" else "Green" + green_msg + " Red" + red_msg)
@@ -182,9 +182,9 @@ class ChessGame:
 
     def perform_AI(self):
         print ('...AI is calculating...')
-        START_TIME = time.clock()
+        START_TIME = time.process_time()
         move, win_rate = self.cchess_engine.select_move(self.ai_function)
-        time_used = time.clock() - START_TIME
+        time_used = time.process_time() - START_TIME
         print ('...Use %fs...' % time_used)
         if self.current_player == "w":
             self.time_red.append(time_used)

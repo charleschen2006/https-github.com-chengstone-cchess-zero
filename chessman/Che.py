@@ -6,20 +6,20 @@ class Che(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RRS.gif"
+                return "images/RRS.GIF"
             else:
-                return "images/BRS.gif"
+                return "images/BRS.GIF"
         else:
             if self.is_red:
-                return "images/RR.gif"
+                return "images/RR.GIF"
             else:
-                return "images/BR.gif"
+                return "images/BR.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RRS.gif"
+            return "images/RRS.GIF"
         else:
-            return "images/BRS.gif"
+            return "images/BRS.GIF"
 
     def can_move(self, board, dx, dy):
         if dx != 0 and dy != 0:

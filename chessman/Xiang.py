@@ -6,20 +6,20 @@ class Xiang(ChessPiece):
     def get_image_file_name(self):
         if self.selected:
             if self.is_red:
-                return "images/RBS.gif"
+                return "images/RBS.GIF"
             else:
-                return "images/BBS.gif"
+                return "images/BBS.GIF"
         else:
             if self.is_red:
-                return "images/RB.gif"
+                return "images/RB.GIF"
             else:
-                return "images/BB.gif"
+                return "images/BB.GIF"
 
     def get_selected_image(self):
         if self.is_red:
-            return "images/RBS.gif"
+            return "images/RBS.GIF"
         else:
-            return "images/BBS.gif"
+            return "images/BBS.GIF"
 
     def can_move(self, board, dx, dy):
         x,y = self.x, self.y
